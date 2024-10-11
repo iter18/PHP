@@ -9,6 +9,15 @@ class Libro extends Model
 {
     use HasFactory;
 
+    // Nombre de la tabla en la base de datos
+    protected $table = 'libros'; // Reemplaza con el nombre real de tu tabla
+
+    // Clave primaria
+    protected $primaryKey = 'lib_id';
+
+    // Indica que la clave primaria es autoincrementable
+    public $incrementing = true;
+
     //Mapear campos de tabla que persistiran, como tiene el nombre del campo en la tabla 
     protected $fillable = [
         'lib_titulo',

@@ -10,4 +10,6 @@ use App\Http\Controllers\LibroControllerSinAuxiliar;
 
 //forma 1 de declarar endpoints, método directos GET,PUT,POST,DELETE,ETC. y con la ventaja de nombres propios end point
 
-Route::get('/products', [LibroControllerSinAuxiliar::class, 'listaProductos']);
+Route::get('/v1.0/products', [LibroControllerSinAuxiliar::class, 'listaProductos']);
+
+Route::get('/v1.1/products', [LibroControllerSinAuxiliar::class, 'listaProductosCapas']);
